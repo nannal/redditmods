@@ -1,0 +1,5 @@
+rm -rfv /home/danielabbott/reddit/users/*
+rm -rf /home/danielabbott/reddit/errorsubs
+touch errorsubs
+python modtracker.py
+git add ./*
