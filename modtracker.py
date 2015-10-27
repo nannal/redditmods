@@ -1,5 +1,11 @@
 import praw
 import os
+import glob
+
+files = glob.glob('./users/*')
+for f in files:
+    os.remove(f)
+
 r = praw.Reddit(user_agent='modtracker - /u/nannal')
 #while loop of subrddit from here bby
 for line in open('subreddit','r'):
