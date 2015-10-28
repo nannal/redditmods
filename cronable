@@ -3,4 +3,5 @@ rm -rf /home/danielabbott/reddit/errorsubs
 touch errorsubs
 python modtracker.py
 git add -A ./*
-git commit -m "'"$(date)"'" 
+git commit -m "$(date)"
+git push 
