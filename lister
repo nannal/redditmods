@@ -1,0 +1,1 @@
+i=$(curl -Ss http://metareddit.com/reddits/biggest/list/ | grep 'aria-label="Next">' | cut -d '"' -f 2 | tail -n 1|cut -f 2 -d '=' ); while [ $i != 0 ]; do curl -Ss http://metareddit.com/reddits/biggest/list/?page=$i|grep "subreddit-link"|cut -f 4 -d '"'| cut -f 3 -d '/' >> subreddit; i=$(($i-1)); done 

@@ -1,7 +1,10 @@
-rm -rfv /home/danielabbott/reddit/users/*
-rm -rf /home/danielabbott/reddit/errorsubs
+rm -rf /home/danielabbott/reddit/redditmods/users/*
+rm -rf /home/danielabbott/reddit/redditmods/errorsubs
+#rm -rf /home/danielabbott/reddit/redditmods/subreddit
+#touch subreddit 
 touch errorsubs
-python modtracker.py
-git add -A ./*
+#/home/danielabbott/reddit/lister
+python /home/danielabbott/reddit/redditmods/modtracker.py
+git add -A /home/danielabbott/reddit/redditmods/*
 git commit -m "$(date)"
 git push 
