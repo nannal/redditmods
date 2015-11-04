@@ -8,7 +8,7 @@ for f in files:
 
 r = praw.Reddit(user_agent='modtracker - /u/nannal')
 #while loop of subrddit from here bby
-for line in open('subreddit','r'):
+for line in open('/home/danielabbott/reddit/redditmods/subreddit','r'):
         sub = str(line.rstrip('\n'))
         print sub
         try:
