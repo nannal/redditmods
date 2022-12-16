@@ -1,5 +1,7 @@
 # redditmods
+```sh
 wc -l ./users/*|sort -n
+```
 
 Additionally, check the commits to see changes between two dates.
 
